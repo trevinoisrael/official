@@ -1,0 +1,61 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html {
+	background-image: url("http://cms.ipressroom.com.s3.amazonaws.com/18/files/20139/StoreExterior2013.jpg");
+	background-size: 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding-top: 50px;
+	}
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.text {
+	font-family: sans-serif;
+	font-size: 24px;
+	float: left;
+	padding: 10px;
+
+
+}
+
+.product-label {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(0, 0, 0, .7);
+
+	border-radius: 8px;
+	width: 736px;
+	padding: 0 20px 20px 20px;
+	 
+}
+img {
+	padding-top: 20px;
+	border-radius: 8px;
+	float: left;
+	width: 130px;
+}
+
+p {
+	padding-top: 0px;
+	margin-top: 0;
+	color: white;
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold;
+	color: inherit;
+}

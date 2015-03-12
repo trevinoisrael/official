@@ -1,0 +1,68 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {background-color: blue;
+	}
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+h1,h2 {margin: 0;}
+
+
+#playlist {
+	width: 300px;
+
+}
+
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	background: linear-gradient(10deg, #111, #4a4a4a);
+	color: red;
+	font-family: sans-serif;
+	padding: 10px;
+}
+
+.album-info img {
+	width: 75px;
+	float: left;
+}
+
+.track-info {
+	float: right;
+}
+
+.track-info h1 {
+	font-size: 20px;
+}
+
+.track-info h2 {
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.control-panel p {
+	float: left;
+	margin: 0;
+}
+
+.control-panel button {
+	float: right;
+}
+
+
+
+
+
