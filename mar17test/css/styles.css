@@ -1,0 +1,133 @@
+*, *::before, *::after
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+}
+
+
+a {
+	color: hsla(0, 80%, 50%, 1);
+	text-decoration: none;
+}
+
+a:link {
+	color: hsla(100, 80%, 30%, 1);
+}
+
+a:hover {
+	color: purple;
+	text-decoration: underline;
+}
+
+a:active {
+	color: red;
+}
+
+a::before {
+	content: "";
+	/*display: block;*/
+	width: 50px;
+	height: 50px;
+	background-color: yellow;
+}
+
+a::after {
+	content: "";
+	/*display: block;*/
+	width: 40px;
+	height: 40px;
+	background-color: red;
+	position: absolute;
+	right: 0%;
+	
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+p::first-letter {
+	font-size:30px;
+}
+
+p{
+	background-color: hsla(220, 40%, 70%, 1);
+	position: relative;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+
+p::first-line {
+	color: red;
+}
+
+p::selection {
+	color: yellow;
+	background-color: purple
+}
+
+p::after {
+	content: "";
+	display: block;
+	/*width: 30px;
+	height: 30px;
+	*/	
+	/*background-color: hsla(220, 40%, 70%, 1);*/
+	position: absolute;
+	right: 0%;
+	border-width: 0px 15px 15px 20px;
+	border-style: solid;
+	border-color: transparent transparent transparent hsla(220, 40%, 70%, 1);
+}
+
+/* Pseudo Classes 
+:first-child
+:last-child
+:nth-child( var )
+:first-of-type
+:last-of-type
+:nth-of-type( var )
+
+:link
+:visited
+:hover
+:active
+:focus
+
+--Pseudo Elements
+::before
+::after
+::first-letter;
+::first-line;
+::selection;
+*/
+
+/* Pseudo Classes 
+:first-child
+:last-child
+:nth-child( var )
+:first-of-type
+:last-of-type
+:nth-of-type( var )
+
+:link
+:visited
+:hover
+:active
+:focus
+
+--Pseudo Elements
+::before
+::after
+::first-letter;
+::first-line;
+::selection;
+*/

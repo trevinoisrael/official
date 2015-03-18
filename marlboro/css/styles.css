@@ -1,0 +1,104 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+body{
+	margin: 0;
+	text-align: center;
+}
+
+#wrapper {
+	width: 400px;
+}
+
+header {
+	background-color: hsla(357, 87%, 43%, 1);
+	overflow: hidden;
+}
+
+header h2 {
+	background-color:  hsla(0, 0%, 100%, 1);
+	width: 70%;
+    margin: 45px auto 20px;
+	border-radius: 22px;
+	padding: 10px 0;
+	letter-spacing: 3px;
+	font-family: 'source sans pro', sans-serif;
+}
+
+main {
+	border-bottom: 10px solid hsla(357, 87%, 43%, 1);
+}
+
+main img {
+	width: 35%;
+	display: block;
+	margin: 0 auto;
+}
+
+main h1 {
+	font-size: 105px;
+	font-family: 'Unna', serif;
+
+}
+
+main h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: 'syncopate', sans-serif;
+	color: hsla(38, 31%, 49%, 1);
+	
+}
+
+
+/* Pseudo Classes 
+:first-child
+:last-child
+:nth-child( var )
+:first-of-type
+:last-of-type
+:nth-of-type( var )
+
+:link
+:visited
+:hover
+:active
+:focus
+
+--Pseudo Elements
+::before
+::after
+::first-letter;
+::first-line;
+::selection;
+*/
+
+/* Pseudo Classes 
+:first-child
+:last-child
+:nth-child( var )
+:first-of-type
+:last-of-type
+:nth-of-type( var )
+
+:link
+:visited
+:hover
+:active
+:focus
+
+--Pseudo Elements
+::before
+::after
+::first-letter;
+::first-line;
+::selection;
+*/

@@ -1,0 +1,57 @@
+
+
+html {
+	}
+
+body {
+	background-color: grey; 
+	padding-top: 50px;
+	}
+
+.text {
+	font-family: sans-serif;
+	font-size: 24px;
+	padding: 10px;
+}
+
+
+.product-label {
+	background-color: red;
+	width: 736px;
+	height: 300px;
+	z-index: 1;
+	border-radius: px;
+}
+
+.product-label2 {
+	background-color: gold;
+    margin-left: 775px;
+	border-radius: 8px;
+	width: 736px;
+	height: 300px;
+	z-index: 2;
+
+}
+
+.product-label {
+	background-color: red;
+    margin-left: 775px;
+	border-radius: 8px;
+	width: 736px;
+	padding: 0 20px 20px 20px;
+	height: 300px;
+	z-index: 1;
+}
+
+img {
+	padding-top: 20px;
+	border-radius: 8px;
+	float: left;
+	width: 250px;
+}
+
+p {
+	padding-top: 0px;
+	margin-top: 0;
+	color: black;
+}

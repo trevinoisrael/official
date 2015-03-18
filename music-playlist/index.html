@@ -1,163 +1,140 @@
-<!doctype html>
-<html lang="en">
-	
-	<head>
-	
-		<meta charset="UTF-8">
-		
-		<title>music-playlist</title>
-		
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	
-	</head>
-				<body>
-					
-					<div id="playlist">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0035)file:///E:/itwestcoast/aboutus.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-						<ol>
+<title>Untitled Document</title>
+<link href="./index_files/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
 
-							<li>
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
 
-									<div class="album-info clearfix">
-										
-										<img src="kuccilee.jpg" alt"">
-										
-										<div class="track-info">
-											
-											<h1>Kucci Lee</h1>
-											
-											<h2>track title</h2>
-										
-										</div>
-									
-									</div>
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+#apDiv6 {
+	position:absolute;
+	width:269px;
+	height:452px;
+	z-index:1;
+	left: 399px;
+	top: 284px;
+	background-image: url(img/graphics/aboutustxtbox.png);
+	font-size: 14px;
+	background-repeat: no-repeat;
+	font-family: "Times New Roman", Times, serif;
+	padding: 25px;
+	text-align: left;
+	margin: 0px;
+	font-style: italic;
+	color: #CCC;
+}
+#apDiv4 {
+	position:absolute;
+	width:352px;
+	height:232px;
+	z-index:1;
+	left: 642px;
+	top: 260px;
+}
+#apDiv1 {
+	position:absolute;
+	width:364px;
+	height:268px;
+	z-index:1;
+	left: 12px;
+	top: 264px;
+}
+#apDiv2 {
+	position:absolute;
+	width:352px;
+	height:250px;
+	z-index:2;
+	left: 642px;
+	top: 510px;
+}
+#apDiv5 {
+	position:absolute;
+	width:329px;
+	height:487px;
+	z-index:3;
+	left: 361px;
+	top: 280px;
+}
+#apDiv3 {
+	position:absolute;
+	width:364px;
+	height:253px;
+	z-index:1;
+	left: 11px;
+	top: 510px;
+}
+-->
+</style>
+</head>
 
-									<hr size="1">
-									
-									<div class="control-panel clearfix">
-										
-										<p>0:00</p>
-										
-										<button><i class="fa fa-play"></i></button>
-					</div>
+<body class="oneColFixCtr" onload="MM_preloadImages(&#39;img/buttons/home.png&#39;,&#39;img/buttons/aboutus.png&#39;,&#39;img/buttons/sevices.png&#39;,&#39;img/buttons/servicesover.png&#39;,&#39;img/buttons/health.png&#39;,&#39;img/buttons/healthover.png&#39;,&#39;img/buttons/delghts.png&#39;,&#39;img/buttons/delightsover.png&#39;,&#39;img/buttons/desserts.png&#39;,&#39;img/buttons/dessertsover.png&#39;,&#39;img/buttons/drinks.png&#39;,&#39;img/buttons/drinksover.png&#39;,&#39;img/buttons/aboutusover.png&#39;,&#39;img/buttons/homeover.png&#39;)">
+<div id="apDiv6"><p>Ziggy Angus received his first culinary experience from his mother, Hilda, when he was a boy growing up in the small town of Fall River, Massachusetts. As a teenager, he worked at a Portuguese bakery where he mastered the art of bread and pastry baking. Upon high school graduation, Angus was offered a full scholarship to the New England Conservatory of Music, but decided to pursue a career as a professional chef. He earned a degree from the respected culinary fortress, Johnson and Wales University, and later received an honorary Doctorate degree from the university.  Angus then traveled to Paris and Lyon where he polished his skills and learned the art of classic French cuisine. Returning to the United States, Angus practiced his art in fine restaurants in New York, Boston and Philadelphia before heading south to the Big Easy. Lured to New Orleans by Dick and Ella Brennan, Angus established his star at their legendary restaurant, Commander's Palace, where he was executive chef for seven and a half years.</p>
+</div>
 
-							</li>
-
-														<li>
-
-									<div class="album-info clearfix">
-										
-										<img src="livin42day.jpg" alt"">
-										
-										<div class="track-info">
-											
-											<h1>Kucci Lee</h1>
-											
-											<h2>track title</h2>
-										
-										</div>
-									
-									</div>
-
-									<hr size="1">
-									
-									<div class="control-panel clearfix">
-										
-										<p>0:00</p>
-										
-										<button><i class="fa fa-play"></i></button>
-									</div>
-
-							</li>
-
-														<li>
-
-									<div class="album-info clearfix">
-										
-										<img src="machard.jpg" alt"">
-										
-										<div class="track-info">
-											
-											<h1>Kucci Lee</h1>
-											
-											<h2>track title</h2>
-										
-										</div>
-									
-									</div>
-
-									<hr size="1">
-									
-									<div class="control-panel clearfix">
-										
-										<p>0:00</p>
-										
-										<button><i class="fa fa-play"></i></button>
-									</div>
-
-							</li>
-
-														<li>
-
-									<div class="album-info clearfix">
-										
-										<img src="tool.jpg" alt"">
-										
-										<div class="track-info">
-											
-											<h1>Kucci Lee</h1>
-											
-											<h2>track title</h2>
-										
-										</div>
-									
-									</div>
-
-									<hr size="1">
-									
-									<div class="control-panel clearfix">
-										
-										<p>0:00</p>
-										
-										<button><i class="fa fa-play"></i></button>
-									</div>
-
-							</li>
-
-														<li>
-
-									<div class="album-info clearfix">
-										
-										<img src="kuccilee.jpg" alt"">
-										
-										<div class="track-info">
-											
-											<h1>Kucci Lee</h1>
-											
-											<h2>track title</h2>
-										
-										</div>
-									
-									</div>
-
-									<hr size="1">
-									
-									<div class="control-panel clearfix">
-										
-										<p>0:00</p>
-										
-										<button><i class="fa fa-play"></i></button>
-									</div>
-
-							</li>
+<div id="container">
+  <div id="mainContent">
+    <h1><a href="file:///E:/itwestcoast/index.html" target="_top" onclick="MM_nbGroup(&#39;down&#39;,&#39;group1&#39;,&#39;home&#39;,&#39;img/buttons/home.png&#39;,1)" onmouseover="MM_nbGroup(&#39;over&#39;,&#39;home&#39;,&#39;img/buttons/homeover.png&#39;,&#39;img/buttons/homeover.png&#39;,1)" onmouseout="MM_nbGroup(&#39;out&#39;)"><img src="./index_files/home.png" alt="home_btn" name="home" border="0"></a>&nbsp;&nbsp;&nbsp;<a href="./index_files/index.html" target="_top" onclick="MM_nbGroup(&#39;down&#39;,&#39;group1&#39;,&#39;aboutus&#39;,&#39;img/buttons/aboutus.png&#39;,1)" onmouseover="MM_nbGroup(&#39;over&#39;,&#39;aboutus&#39;,&#39;img/buttons/aboutus.png&#39;,&#39;img/buttons/aboutusover.png&#39;,1)" onmouseout="MM_nbGroup(&#39;out&#39;)"><img src="./index_files/aboutusover.png" alt="aboutus_btn" name="aboutus" border="0"></a>&nbsp;&nbsp;&nbsp;<a href="file:///E:/itwestcoast/services.html" target="_top" onclick="MM_nbGroup(&#39;down&#39;,&#39;group1&#39;,&#39;sevices&#39;,&#39;img/buttons/sevices.png&#39;,1)" onmouseover="MM_nbGroup(&#39;over&#39;,&#39;sevices&#39;,&#39;img/buttons/servicesover.png&#39;,&#39;img/buttons/servicesover.png&#39;,1)" onmouseout="MM_nbGroup(&#39;out&#39;)"><img src="./index_files/sevices.png" alt="services" name="sevices" width="122" height="26" border="0"></a>&nbsp;&nbsp;&nbsp;<a href="file:///E:/itwestcoast/health.html" target="_top" onclick="MM_nbGroup(&#39;down&#39;,&#39;group1&#39;,&#39;health&#39;,&#39;img/buttons/health.png&#39;,1)" onmouseover="MM_nbGroup(&#39;over&#39;,&#39;health&#39;,&#39;img/buttons/healthover.png&#39;,&#39;img/buttons/healthover.png&#39;,1)" onmouseout="MM_nbGroup(&#39;out&#39;)"><img src="./index_files/health.png" alt="health" name="health" width="113" height="12" border="0"></a>&nbsp;&nbsp;&nbsp;<a href="file:///E:/itwestcoast/culinary.html" target="_top" onclick="MM_nbGroup(&#39;down&#39;,&#39;group1&#39;,&#39;delghts&#39;,&#39;img/buttons/delghts.png&#39;,1)" onmouseover="MM_nbGroup(&#39;over&#39;,&#39;delghts&#39;,&#39;img/buttons/delightsover.png&#39;,&#39;img/buttons/delightsover.png&#39;,1)" onmouseout="MM_nbGroup(&#39;out&#39;)"><img src="./index_files/delghts.png" alt="culinary" name="delghts" width="90" height="26" border="0"></a>&nbsp;&nbsp;&nbsp;<a href="file:///E:/itwestcoast/desserts.html" target="_top" onclick="MM_nbGroup(&#39;down&#39;,&#39;group1&#39;,&#39;desserts&#39;,&#39;img/buttons/desserts.png&#39;,1)" onmouseover="MM_nbGroup(&#39;over&#39;,&#39;desserts&#39;,&#39;img/buttons/dessertsover.png&#39;,&#39;img/buttons/dessertsover.png&#39;,1)" onmouseout="MM_nbGroup(&#39;out&#39;)"><img src="./index_files/desserts.png" alt="desserts" name="desserts" width="115" height="25" border="0"></a>&nbsp;&nbsp;&nbsp;<a href="file:///E:/itwestcoast/drinks.html" target="_top" onclick="MM_nbGroup(&#39;down&#39;,&#39;group1&#39;,&#39;drinks&#39;,&#39;img/buttons/drinks.png&#39;,1)" onmouseover="MM_nbGroup(&#39;over&#39;,&#39;drinks&#39;,&#39;img/buttons/drinksover.png&#39;,&#39;img/buttons/drinksover.png&#39;,1)" onmouseout="MM_nbGroup(&#39;out&#39;)"><img src="./index_files/drinks.png" alt="drinks" name="drinks" width="68" height="25" border="0"></a></h1>
+<!-- end #mainContent -->
+<div id="apDiv3"><img src="./index_files/host.png" width="355" height="252" alt="hosts"></div>
+<div id="apDiv4"><img src="./index_files/chef.png" width="355" height="252" alt="chefs"></div>
+</div>
+    
+  <div id="content"></div>
+    <div id="apDiv1"><img src="./index_files/ziggy.png" width="352" height="253" alt="ziggy"> </div>
+<div id="apDiv2"><img src="./index_files/wait.png" width="355" height="252" alt="wait"></div>
+    
+<!-- end #container --></div>
 
 
-
-						</ol>
-
-					</div>
-		   
-				</body>
-</html>
+</body></html>
