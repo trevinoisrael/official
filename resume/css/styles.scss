@@ -1,0 +1,124 @@
+body {
+	font-family: helvetica, sans-serif;
+}
+
+%clearfix {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	background-color: lightblue;
+	&::before,
+	&::after{
+		@extend %clearfix;
+	}
+	
+	h1{
+		width: 50%;
+		float: left;
+		margin: 0;
+		text-align: center;
+		font-size: 11vw;
+		span {
+			font-size: 15vw;
+		}
+
+	}
+
+	address{
+		width: 50%;
+		float: left;
+	}
+}
+
+section {
+	margin: 20px 0 40px;
+	div{
+		position: relative;
+
+		div{
+			position: relative;
+		}
+	}
+
+
+	
+	h2 {
+		white-space: nowrap;
+		padding: 0 40px;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: "times new roman", serif;
+		position: absolute;
+		background-color: teal;
+		margin: 0;
+		top: 0;
+		right:100%;
+		transform: rotate(-90deg);
+		transform-origin: top right;
+	}
+
+}
+
+
+section:first-of-type {
+	ul {
+		&::before,
+		&::after {
+			@extend %clearfix; 
+		}
+	}
+
+	li {
+		display: inline-block;
+		width: 25%;
+		float: left;
+	}
+}
+
+section:nth-of-type(2){
+	> div {
+		width: 100%;
+	}
+}
+
+section:nth-of-type(3){
+	&::before,
+	&::after {
+		@extend %clearfix; 
+		}	
+	> div {
+		width: 33%;
+		float: left;
+	}
+	div:last-of-type div h2{
+		position: static;
+		transform: none;
+	}
+}
+
+section:last-of-type{
+	&::before,
+	&::after {
+		@extend %clearfix; 
+		}
+	> div {
+		width: 50%;
+		float: left;
+	}
+} 
+	
+section:last-of-type 
+	div:first-of-type 
+	div:last-of-type 
+		h2 {
+			background: blue;
+}

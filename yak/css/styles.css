@@ -1,0 +1,80 @@
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#friends li::before,
+#friends li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  background-color: gray;
+}
+
+#friends {
+  width: 252px;
+}
+#friends ul {
+  padding: 0;
+  margin: 0;
+}
+#friends li {
+  background-image: linear-gradient(#83b4ff, blue);
+  border-width: 5px;
+  border-style: solid;
+  border-color: blue;
+  border-radius: 5px;
+  padding: 5px;
+  color: #e8e8e8;
+}
+#friends li.active {
+  background-image: linear-gradient(#27aa78, #1c1c1c);
+}
+#friends img {
+  width: 50px;
+  float: left;
+  margin-right: 5px;
+  border-radius: 50%;
+  border-width: 5px;
+  border-style: dashed;
+  border-color: #83b4ff;
+}
+#friends h2, #friends h3 {
+  margin: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+#friends h2 {
+  font-weight: 900;
+}
+#friends h3 {
+  font-weight: 100;
+  font-style: italic;
+}
+#friends li div:first-of-type {
+  width: 150px;
+  float: left;
+}
+#friends li div:last-of-type {
+  float: right;
+}
+#friends button {
+  border-width: 3px;
+  border-style: groove;
+  border-color: blue;
+  background-color: #1c1c1c;
+  color: #e8e8e8;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=styles.css.map */

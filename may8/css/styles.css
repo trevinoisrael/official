@@ -1,0 +1,62 @@
+nav ul {
+	float: right;
+}
+nav li {
+	display: inline;
+}
+nav::before, nav::after,
+section::before, section::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+a {
+	padding: 5px;
+	color: green;
+	text-decoration: none;
+}
+a
+
+.container {
+	border-width: 0 12vw;
+	border-style: solid;
+	border-color: transparent;
+}
+
+figure {
+	float: right;
+	width: 33%;
+	background-color: darkgray;
+	border-radius: 10px;
+	padding: 10px;
+	margin-right: 0 0 0 50px;
+	
+
+}
+
+figure img {
+	height: auto;
+	width: 100%;
+	
+
+}
+
+figcaption{
+	text-align: center;
+}
+header{
+	background-color: lightgray;
+}
+footer{
+	background-color: gray;
+
+}
+footer p{
+	color: white;
+	padding: 10px 0;
+	margin: 0 auto;
+}
+section{
+
+}

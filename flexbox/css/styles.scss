@@ -1,0 +1,47 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+
+
+body {
+	display: flex;
+	// justify-content:
+	/*
+	flex-start//default
+	flex-end
+	center
+	space-around
+	space-between
+	*/
+	// align-items:
+	/*
+	flex-start
+	flex-end
+	center
+	baseline
+	strech//default
+	*/
+	flex-direction: column;
+
+	/*
+	row//default 
+	row-reverse
+	column
+	column-reverse
+	*/
+}
+
+main {
+	flex: 1;
+	display: flex;
+}
+
+article{
+	flex: 1;
+}
+
+aside {
+	flex: 1;
+}

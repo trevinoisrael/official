@@ -1,0 +1,81 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+/* layout CSS start */
+
+main{
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+
+}
+
+section#friends {
+	width: 250px;
+	height: 100%;
+	background-color: teal;
+	float: left;
+}
+
+section#messages {
+	margin-left: 250px;
+	height: 100%;
+	background-color: orange;
+	
+}
+
+div#messagesbox {
+	width: 100%;
+	height: 40px;
+	background-color: grey;
+}
+/* layout CSS end */
+
+
+/* Friends list css start*/
+
+#friends ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#friends ul li {
+
+}
+
+#friends ul li img {
+	width: 50px;
+	float: left;
+	border-radius: 
+
+}
+#friends ul li div:first-of-type {
+	width: 150px;
+	float: left;
+}
+
+#friends ul li div:first-of-type h2,
+#friends ul li div:first-of-type h3 {
+	margin: 0;
+}
+#friends ul li div:last-of-type {
+
+}
+
+/* Friends list css start*/
+
+

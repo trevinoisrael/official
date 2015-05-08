@@ -1,0 +1,100 @@
+@import "reset";
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+$base-color: hsla(157, 63%, 41%, 1);
+$light-base: lighten($base-color, 20);
+$dark-base: darken($base-color, 20);
+$white-base: lighten(grayscale($base-color), 50);
+$black-base: darken(grayscale($base-color), 30);
+$comp-base: complement($base-color);
+$bblu:	rgb(131, 180, 255);
+
+%bordering {
+   border-width: 1px;
+   border-style: solid;
+   border-color: white;
+}
+
+@mixin border-mixin($width, $style, $color){
+   border-width: $width;
+   border-style: $style;
+   border-color: $color;
+}
+
+
+@mixin gradient-mixin($r, $b){
+	background-image: linear-gradient($r, $b);
+}
+
+body {
+   background-color: gray;
+
+}
+
+#friends {
+   width: 252px;
+	
+   ul {
+
+       padding: 0;
+       margin: 0;
+   }
+   li {
+   	   
+	   @include gradient-mixin($bblu, blue);
+   	   @include border-mixin(5px, solid, blue);
+       border-radius: 5px;
+
+       // @extend %bordering;
+       padding: 5px;
+       // background-image: linear-gradient(lighten($base-color, 10%), $black-base);
+       color: $white-base;
+
+       &.active {
+           background-image: linear-gradient($base-color, $black-base);
+       }
+   }
+   li::before,
+   li::after {
+       @extend %clearfix;
+   }
+   img {
+       width: 50px;
+       float: left;
+       margin-right: 5px;
+       border-radius: 50%;
+       // @extend %bordering;
+       @include border-mixin(5px, dashed, $bblu);
+
+   }
+   
+   h2, h3 {
+       margin: 0;
+       font-size: 16px;
+       font-family: sans-serif;
+   }
+   h2 {
+       font-weight: 900;
+   }
+   h3 {
+       font-weight: 100;
+       font-style: italic;
+   }
+   li div:first-of-type {
+       width: 150px;
+       float: left;
+   }
+   li div:last-of-type {
+       float: right;
+   }
+   button {
+       // @extend %bordering;
+       @include border-mixin(3px, groove, blue);
+       background-color: $black-base;
+       color: $white-base;
+       border-radius: 4px;
+   }
+}
+
+
+
